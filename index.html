@@ -38,7 +38,7 @@
                     </div>
                     <div class="d-flex d-none" id="authenticated">
                         <button class="btn btn-outline-success me-2" id="authenticated-username"></button>
-                        <button class="btn btn-danger">Logout</button>
+                        <button class="btn btn-danger" onclick="logout()">Logout</button>
                     </div>
                 </div>
             </div>
@@ -202,6 +202,11 @@
         const usernameInput = document.getElementById("usernameFormInput").value;
         console.log(usernameInput)
         localStorage.setItem("username", usernameInput);
+        window.location.reload()
+    }
+
+    function logout(){
+        localStorage.removeItem("username")
         window.location.reload()
     }
 </script>
