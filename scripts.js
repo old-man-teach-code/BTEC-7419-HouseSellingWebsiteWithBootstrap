@@ -140,7 +140,7 @@ house_list.forEach(house => {
                                         <li>Vị trí: ${house.address}</li>
                                         <li>Giá: ${house.price}</li>
                                         <li>Mô tả: ${house.description}</li>
-                                        <li>Sẵn sàng bán: ${house.available ? "Muốn bán" : "Chưa muốn bán"}</li>
+                                        <li>Sẵn sàng bán: ${house.available ? '<span style="color: red">Muốn bán</span>' : '<span style="color: green">Chưa muốn bán</span>'}</li>
                                     </ul>
                                     </p>
                                     <a href="#" class="btn btn-primary">Liên hệ luôn</a>
